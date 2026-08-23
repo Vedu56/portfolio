@@ -1,19 +1,136 @@
-<main>
-    <a href="project-alpha.html" class="project-link">
-        <div class="project">
-            <h2>Project Alpha: Data Visualizer</h2>
-            <p>A web application that takes raw CSV data and outputs minimalist graphs. Built to handle large datasets locally without server lag.</p>
-            <div class="tech-stack">Tech: Python, Flask, D3.js</div>
-            <div style="margin-top: 1rem; font-weight: bold;">[VIEW_DEMO &amp; SPECS -&gt;]</div>
-        </div>
-    </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG ANOMALY DETECTOR</title>
+    <!-- Google Font: Audiowide -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+        h1, h2 {
+            font-family: 'Audiowide', sans-serif;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 0.5rem;
+        }
+        nav {
+            margin-bottom: 2rem;
+        }
+        a {
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid #ffffff;
+        }
+        a:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+        /* Demo Display Box */
+        .demo-container {
+            border: 1px solid #ffffff;
+            padding: 1rem;
+            margin: 2rem 0;
+            background-color: #050505;
+        }
+        .demo-gif {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #333333;
+        }
+        .specs-panel {
+            border: 1px solid #ffffff;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+        .tech-tag {
+            display: inline-block;
+            border: 1px solid #ffffff;
+            padding: 0.2rem 0.6rem;
+            font-size: 0.85rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .actions {
+            margin-top: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            font-family: 'Audiowide', sans-serif;
+            padding: 0.8rem 1.5rem;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            transition: all 0.2s ease;
+        }
+        .btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
 
-    <a href="project-beta.html" class="project-link">
-        <div class="project">
-            <h2>Project Beta: Terminal Weather</h2>
-            <p>A command-line tool that pulls weather API data and displays it directly in your terminal using ASCII art.</p>
-            <div class="tech-stack">Tech: Node.js, OpenWeather API</div>
-            <div style="margin-top: 1rem; font-weight: bold;">[VIEW_DEMO &amp; SPECS -&gt;]</div>
+    <div class="container">
+        <nav>
+            <a href="index.html">RETURN TO PORTFOLIO</a>
+        </nav>
+
+        <h1>FOOTBALL MATCH OUTCOME PREDICTOR</h1>
+
+        <!-- GIF Demo Section -->
+        <div class="demo-container">
+            <div style="font-size: 0.8rem; margin-bottom: 0.5rem;">DEMO</div>
+            <img src="log" alt="GIF Demo" class="demo-gif">
         </div>
-    </a>
-</main>
+
+        <!-- Technical Breakdown -->
+        <div class="specs-panel">
+            <h2>SYSTEM_SPECS</h2>
+            <div style="margin-bottom: 1rem;">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">D3.js</span>
+            </div>
+            <p><strong>Key Features:</strong></p>
+            <ul>
+                <li>Parses up to 50MB CSV files directly client-side.</li>
+                <li>Generates high-contrast vectors exportable to SVG.</li>
+                <li>Zero external network tracking or remote server storage.</li>
+            </ul>
+        </div>
+
+        <!-- Links -->
+        <div class="actions">
+            <a href="https://your-demo.netlify.app" target="_blank" class="btn">[LAUNCH_LIVE_APP]</a>
+            <a href="https://github.com/yourusername/project-alpha" target="_blank" class="btn">[SOURCE_CODE]</a>
+        </div>
+    </div>
+
+</body>
+</html>
