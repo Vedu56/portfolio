@@ -75,7 +75,7 @@ body {
             opacity: 0.5;
             cursor: not-allowed;
         }
-        /* Status Banner */
+
         #status-box {
             display: none;
             border: 1px solid #ffffff;
