@@ -48,13 +48,13 @@
         const submitBtn = document.getElementById('submit-btn');
         const statusBox = document.getElementById('status-box');
 
-        // Target endpoint (Formspree or FormSubmit AJAX)
+        
         const ENDPOINT = "https://formsubmit.co/ajax/vedutrivedi49@gmail.com";
 
         form.addEventListener('submit', async function(e) {
             e.preventDefault();
             
-            // UI Loading State
+            
             submitBtn.disabled = true;
             submitBtn.innerText = "SENDING...";
             statusBox.style.display = "none";
